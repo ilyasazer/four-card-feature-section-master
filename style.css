@@ -1,0 +1,211 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+/* *********************** Header Section ************************************ */
+
+.header {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.header h1 {
+  font-weight: 200;
+  color: var(--grayish-blue);
+}
+
+.header h2 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+}
+.header p {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+/* *********************** card Section ************************************ */
+
+.cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "start mid1 end"
+    "start mid2 end";
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3rem;
+  margin: 7.5rem 8% 0;
+}
+
+.card1 {
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  border-top: 5px solid var(--cyan);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 19px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  grid-area: start;
+  align-self: center;
+}
+
+.card1 h3 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-top: 1rem;
+}
+
+.card1 p {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+.card1 img {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.card2 {
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  border-top: 5px solid var(--red);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 19px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+  grid-area: mid1;
+}
+
+.card2 h3 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-top: 1rem;
+}
+
+.card2 p {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+.card2 img {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.card3 {
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  border-top: 5px solid var(--red);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 19px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+  grid-area: mid2;
+  margin-top: 10px;
+}
+
+.card3 h3 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-top: 1rem;
+}
+
+.card3 p {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+.card3 img {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.card4 {
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  border-top: 5px solid var(--orange);
+  border-radius: 0.3rem;
+  box-shadow: 5px 5px 19px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  position: relative;
+  grid-area: end;
+  align-self: center;
+}
+
+.card4 h3 {
+  font-weight: 600;
+  color: var(--very-dark-blue);
+  margin-top: 1rem;
+}
+
+.card4 p {
+  font-weight: 200;
+  color: var(--grayish-blue);
+  margin-top: 1rem;
+}
+
+.card4 img {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  top: 150px;
+  bottom: 30px;
+  right: 30px;
+}
+
+/* *********************** Footer Section ************************************ */
+
+footer {
+  background-color: var(--very-dark-blue);
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 50px;
+}
+
+footer p {
+  font-weight: 200;
+  color: white;
+  margin-top: 1rem;
+}
+
+footer a {
+  color: var(--red);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--cyan);
+}
